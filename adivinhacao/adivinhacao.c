@@ -18,24 +18,22 @@ int main(){
         printf("Seu chute foi: %d\n\n", chute);
 
         int acertou = (chute == numero_secreto);
+        int maior = chute > numero_secreto;
 
         if(acertou){
             printf("Parabens! Voce acertou!\n");
-            printf("Jogue novamente, voce e um bom jogador!\n");
+            printf("Jogue novamente, voce e um bom jogador!\n\n");
             break;
         }
-        else {
-            int maior = (chute > numero_secreto);
-            if(maior){
-                printf("Seu chute foi maior que o numero secreto\n");
-            }
-            else{
-                printf("Seu chute foi menor que o numero secreto\n");
-            }
+        else if(maior){
+            printf("Seu chute foi maior que o numero secreto\n\n");
+        }
+        else{
+            printf("Seu chute foi menor que o numero secreto\n\n");
         }
     }
 
-    printf("\nFim do jogo!\n");
+    printf("Fim do jogo!\n");
 
     return 0;
 }
