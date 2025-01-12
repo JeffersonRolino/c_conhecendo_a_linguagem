@@ -45,7 +45,7 @@ int main(){
 
     printf("Fim do jogo!\n");
     printf("Voce acertou em %d tentativas!\n", tentativa);
-    printf("Total de pontos: %f\n", pontos);
+    printf("Total de pontos: %.1f\n", pontos);
 
     return 0;
 }
