@@ -8,6 +8,8 @@ int main(){
 
     int numero_secreto = 42;
     int chute;
+    printf("chute %d\n", chute);
+
     int tentativa = 1;
 
     int pontos = 1000;
