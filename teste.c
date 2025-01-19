@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(void){
-    int a = abs(3);
-    int b = abs(-3);
 
-    int c = abs(a * b);
+    int segundos = time(0);
+    srand(segundos);
 
-    printf("%d", c);
+    int n1 = rand();
+    int n2 = rand();
+
+    printf("%d %d", n1, n2);
 
     return 0;
 }
