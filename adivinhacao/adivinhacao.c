@@ -39,7 +39,7 @@ int main(){
 
         tentativa++;
 
-        double pontos_perdidos = (chute - numero_secreto) / 2.0;
+        double pontos_perdidos = (double)(chute - numero_secreto) / 2;
         pontos = pontos - pontos_perdidos;
     }
 
