@@ -1,16 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void){
-    int a = 3;
-    int b = 2;
+    int a = abs(3);
+    int b = abs(-3);
 
-    double pontos = (double) a / b;
-    printf("%f\n", pontos);
+    int c = abs(a * b);
 
-    double pi = 3.1415;
-    int pi_convertido = (int)pi;
-
-    printf("PI: %f - PI_CONVERTIDO: %d\n", pi, pi_convertido);
+    printf("%d", c);
 
     return 0;
 }
